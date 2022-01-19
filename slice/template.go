@@ -86,7 +86,7 @@ func mapValueByIndex(index string, m map[string]interface{}) (interface{}, error
 
 	v, ok := m[index]
 	if !ok {
-		return nil, fmt.Errorf("map does not contain index %q", index)
+		return "<no value>", nil
 	}
 
 	return v, nil
